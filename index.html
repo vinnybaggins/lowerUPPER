@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - lowerUPPER</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+    <h1>Just in Case</h1>
+    <header class="center">
+        <p>Did you ever type unwittingly a lot of text in uppercase, and then you were so annoyed that you would have to type it again?
+        <p>Did you feel as if you had commited a... <i>capital</i> crime?</p>
+        <p>
+        <p>Just in<i> case</i> you do it again, here you have a tool to fix it.</p>
+    </header>
+    <main>
+        <p>Paste your text in the field below, choose what you want to do, and press Convert.</p>
+        <!--<p style="white-space: pre-wrap;">y   PAs.Te  yo,uR tE,:xt iN t'he field below    cho"ose wh</p>-->
+        <ul id="transfList" class="btnList center">
+            <li id="uppercase" class="btn">All uppercase</li>
+            <li id="lowercase" class="btn">All lowercase</li>
+            <li id="alternating" class="btn">alternating</li>
+            <li id="reverse" class="btn">Reverse order</li>
+            <li id="switchBtn" class="btn">Switch the cases</li>
+        </ul>
+        <ul id="conventionsList" class="btnList center">
+            <li id="camelCase" class="btn">camelCase</li>
+            <li id="PascalCase" class="btn">PascalCase</li>
+            <li id="snake_case" class="btn">snake_case</li>
+        </ul>
+        
+        <textarea id="textarea" class="center"></textarea>
+        
+        <ul class="btnList center">
+            <li id="clearBtn" class="btn">Clear</li>
+            <li id="copyBtn" class="btn">Copy to clipboard</li>
+        </ul>
+    </main>
+</div>
+<script>
+    const alternText = document.querySelector("#alternating");
+    let newText = "";
+    for (let i = 0, n = alternText.innerText.length; i < n; i++) {
+        if (i % 2 !== 0) newText += alternText.innerText[i].toUpperCase();
+        else newText += alternText.innerText[i];
+    }
+    alternText.innerText = newText;
+</script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

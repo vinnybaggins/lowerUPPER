@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: #090000;
+    min-height: 100vh;
+}
+
+.btn {
+    cursor: pointer;
+    color: black;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px dotted bisque;
+    font-variant: small-caps;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    min-height: 100vh;
+    background-color: #130000;
+    color: bisque;
+    line-height: 2rem;
+    font-family: "Candara";
+    text-align: center;
+}
+
+p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header {
+    max-width: 80%;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+main {
+    background-color: #180101;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+textarea {
+    padding: 5px;
+    width: 80%;
+    line-height: 120%;
+    font-size: 2rem;
+    min-height: 350px;
+    background-color: #ffe4c4cc;
+    display: block;
+    margin-bottom: 20px;
+    border: 2px solid bisque;
+    resize: none;
+}
+main p {
+    margin-bottom: 20px;
+}
+
+.btnList {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#transfList, #conventionsList {
+    border: 2px solid bisque;
+    border-bottom: none;
+}
+
+#transfList .btn, #conventionsList .btn {
+    border: 1px solid black;
+    flex-basis: 100%;
+}
+
+.btn {
+    user-select: none;
+    background-color: #ffe4c4;
+    padding-left: 10px; padding-right: 10px;
+    padding-top: 20px; padding-bottom: 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    display: block;
+}
+
+#clearBtn, #copyBtn {
+    font-variant: small-caps;
+    font-size: 1.3rem;
+}
+
+.btnList li:hover {
+    background-color: #d2ba9e;
+}
+
+.btnList li:active {
+    background-color: #baa48a;
+}
+
+#uppercase {
+    text-transform: uppercase;
+}
+#lowercase {
+    text-transform: lowercase;
+}
+/*#reverse{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}*/
